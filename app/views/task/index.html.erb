@@ -1,6 +1,22 @@
-<div>
-  <li>
-    <ul>       </ul>
- </ul>
-  </li>
-</div>
+<%# ヘッダー %>
+<header>
+  <h1>ToDoLists</h1>
+</header>
+<%# タスク一覧表示 %>
+<h2>Current Taskss</h2>
+<table>
+  <thead>
+    <tr>
+      <th>TASK</th>
+      <th>DAY</th>
+   </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @tasks.text %></td>
+      <td><%= @tasks.created_at %></td>
+      <td><%= @tasks.text %></td>
+      <td><%= @tasks.created_at %></td>
+    </tr>
+  </tbody>
+</table>
