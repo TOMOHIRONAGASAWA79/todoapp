@@ -1,22 +1,41 @@
-<%# ヘッダー %>
-<header>
-  <h1>ToDoLists</h1>
-</header>
+<div class="container">
+  <header>
+    <h1>ToDoLists</h1>
+  </header>
+<%# 新規登録フォーム %>
+  <div class="form-contens">
+    <%= form_tag('/tasks', method: :post) do %>
+      <textarea cols="100" name="text" placeholder="新しいタスクを入力してください" rows="1" style="font-size:20px"></textarea> 
+      <div>
+        <input type="submit" value="ADD TASK" class="button">
+      </div>
+    <% end %>
+  </div>
 <%# タスク一覧表示 %>
-<h2>Current Taskss</h2>
-<table>
-  <thead>
-    <tr>
-      <th>TASK</th>
-      <th>DAY</th>
-   </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><%= @tasks.text %></td>
-      <td><%= @tasks.created_at %></td>
-      <td><%= @tasks.text %></td>
-      <td><%= @tasks.created_at %></td>
-    </tr>
-  </tbody>
-</table>
+ <h2>Current Tasks</h2>
+  <table class = "table">
+    <thead>
+      <tr>
+        <th>TASK</th>
+        <th>DAY</th>
+        <th></th>
+        <%# <th></th> %>
+     </tr>
+    </thead>
+    <tbody>
+      <% @tasks.each do |task| %>
+        <tr>
+          <th><%= task.text %></th>
+          <%# application.helper.rbで関数を定義 %>
+          <th><%=  simple_time(task[:created_at]) %></th>
+          <th><%= link_to 'DONE', "/tasks/#{task.id}", method: :delete %></th>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+        
