@@ -1,0 +1,361 @@
+<div class="container">
+                <h1>TO DO LISTS</h1>
+    <form action="/TEST1/public/tasks" method="POST" class="form-horizontal">
+        <input type="hidden" name="_token" value="DO9YO2JzDXr07lbgxhO1mhLjWbMLb4IEncWxEGRg">
+        <!-- Task Name -->
+        <div class="form-group">
+            <label for="task" class="col-sm-3 control-label">Task</label>
+            <div class="col-sm-6">
+                <input type="text" name="name" id="task-name" class="form-control">
+            </div>
+        </div>
+
+        <!-- Add Task Button -->
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-6">
+                <button type="submit" class="btn btn-default">
+                    <i class="fa fa-plus"></i> Add Task
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Current Tasks -->
+    <h2>Current Tasks</h2>
+    <table class="table table-striped task-table">
+        <thead>
+            <tr><th>Task</th>
+            <th>Time</th>
+            <th></th><th>&nbsp;</th>
+        </tr></thead>
+
+        <tbody>
+                            <tr>
+                    <!-- Task Name -->
+                    <td>
+                        <div>TESTMAN</div>
+                    </td>
+                    <!-- created time -->
+                    <td>
+                        <div>2019-12-15 15:05:22</div>
+                    </td>
+<!--                     <td>
+                        <div>object(App\Task)#213 (26) {
+  ["connection":protected]=>
+  string(5) "mysql"
+  ["table":protected]=>
+  NULL
+  ["primaryKey":protected]=>
+  string(2) "id"
+  ["keyType":protected]=>
+  string(3) "int"
+  ["incrementing"]=>
+  bool(true)
+  ["with":protected]=>
+  array(0) {
+  }
+  ["withCount":protected]=>
+  array(0) {
+  }
+  ["perPage":protected]=>
+  int(15)
+  ["exists"]=>
+  bool(true)
+  ["wasRecentlyCreated"]=>
+  bool(false)
+  ["attributes":protected]=>
+  array(4) {
+    ["id"]=>
+    string(2) "15"
+    ["name"]=>
+    string(7) "TESTMAN"
+    ["created_at"]=>
+    string(19) "2019-12-15 15:05:22"
+    ["updated_at"]=>
+    string(19) "2019-12-15 15:05:22"
+  }
+  ["original":protected]=>
+  array(4) {
+    ["id"]=>
+    string(2) "15"
+    ["name"]=>
+    string(7) "TESTMAN"
+    ["created_at"]=>
+    string(19) "2019-12-15 15:05:22"
+    ["updated_at"]=>
+    string(19) "2019-12-15 15:05:22"
+  }
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["casts":protected]=>
+  array(0) {
+  }
+  ["dates":protected]=>
+  array(0) {
+  }
+  ["dateFormat":protected]=>
+  NULL
+  ["appends":protected]=>
+  array(0) {
+  }
+  ["dispatchesEvents":protected]=>
+  array(0) {
+  }
+  ["observables":protected]=>
+  array(0) {
+  }
+  ["relations":protected]=>
+  array(0) {
+  }
+  ["touches":protected]=>
+  array(0) {
+  }
+  ["timestamps"]=>
+  bool(true)
+  ["hidden":protected]=>
+  array(0) {
+  }
+  ["visible":protected]=>
+  array(0) {
+  }
+  ["fillable":protected]=>
+  array(0) {
+  }
+  ["guarded":protected]=>
+  array(1) {
+    [0]=>
+    string(1) "*"
+  }
+}
+</div>
+                    </td> -->
+                    <td>
+                        <form action="/TEST1/public/tasks/15" method="POST">
+                            <input type="hidden" name="_token" value="DO9YO2JzDXr07lbgxhO1mhLjWbMLb4IEncWxEGRg">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <div>&nbsp;</div>
+                            <button>Delete Task</button>
+                        </form>
+                    </td>
+                </tr>
+                            <tr>
+                    <!-- Task Name -->
+                    <td>
+                        <div>TESTMAN</div>
+                    </td>
+                    <!-- created time -->
+                    <td>
+                        <div>2019-12-15 16:21:34</div>
+                    </td>
+<!--                     <td>
+                        <div>object(App\Task)#214 (26) {
+  ["connection":protected]=>
+  string(5) "mysql"
+  ["table":protected]=>
+  NULL
+  ["primaryKey":protected]=>
+  string(2) "id"
+  ["keyType":protected]=>
+  string(3) "int"
+  ["incrementing"]=>
+  bool(true)
+  ["with":protected]=>
+  array(0) {
+  }
+  ["withCount":protected]=>
+  array(0) {
+  }
+  ["perPage":protected]=>
+  int(15)
+  ["exists"]=>
+  bool(true)
+  ["wasRecentlyCreated"]=>
+  bool(false)
+  ["attributes":protected]=>
+  array(4) {
+    ["id"]=>
+    string(2) "17"
+    ["name"]=>
+    string(7) "TESTMAN"
+    ["created_at"]=>
+    string(19) "2019-12-15 16:21:34"
+    ["updated_at"]=>
+    string(19) "2019-12-15 16:21:34"
+  }
+  ["original":protected]=>
+  array(4) {
+    ["id"]=>
+    string(2) "17"
+    ["name"]=>
+    string(7) "TESTMAN"
+    ["created_at"]=>
+    string(19) "2019-12-15 16:21:34"
+    ["updated_at"]=>
+    string(19) "2019-12-15 16:21:34"
+  }
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["casts":protected]=>
+  array(0) {
+  }
+  ["dates":protected]=>
+  array(0) {
+  }
+  ["dateFormat":protected]=>
+  NULL
+  ["appends":protected]=>
+  array(0) {
+  }
+  ["dispatchesEvents":protected]=>
+  array(0) {
+  }
+  ["observables":protected]=>
+  array(0) {
+  }
+  ["relations":protected]=>
+  array(0) {
+  }
+  ["touches":protected]=>
+  array(0) {
+  }
+  ["timestamps"]=>
+  bool(true)
+  ["hidden":protected]=>
+  array(0) {
+  }
+  ["visible":protected]=>
+  array(0) {
+  }
+  ["fillable":protected]=>
+  array(0) {
+  }
+  ["guarded":protected]=>
+  array(1) {
+    [0]=>
+    string(1) "*"
+  }
+}
+</div>
+                    </td> -->
+                    <td>
+                        <form action="/TEST1/public/tasks/17" method="POST">
+                            <input type="hidden" name="_token" value="DO9YO2JzDXr07lbgxhO1mhLjWbMLb4IEncWxEGRg">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <div>&nbsp;</div>
+                            <button>Delete Task</button>
+                        </form>
+                    </td>
+                </tr>
+                            <tr>
+                    <!-- Task Name -->
+                    <td>
+                        <div>TESTMAN</div>
+                    </td>
+                    <!-- created time -->
+                    <td>
+                        <div>2019-12-15 18:46:18</div>
+                    </td>
+<!--                     <td>
+                        <div>object(App\Task)#215 (26) {
+  ["connection":protected]=>
+  string(5) "mysql"
+  ["table":protected]=>
+  NULL
+  ["primaryKey":protected]=>
+  string(2) "id"
+  ["keyType":protected]=>
+  string(3) "int"
+  ["incrementing"]=>
+  bool(true)
+  ["with":protected]=>
+  array(0) {
+  }
+  ["withCount":protected]=>
+  array(0) {
+  }
+  ["perPage":protected]=>
+  int(15)
+  ["exists"]=>
+  bool(true)
+  ["wasRecentlyCreated"]=>
+  bool(false)
+  ["attributes":protected]=>
+  array(4) {
+    ["id"]=>
+    string(2) "18"
+    ["name"]=>
+    string(7) "TESTMAN"
+    ["created_at"]=>
+    string(19) "2019-12-15 18:46:18"
+    ["updated_at"]=>
+    string(19) "2019-12-15 18:46:18"
+  }
+  ["original":protected]=>
+  array(4) {
+    ["id"]=>
+    string(2) "18"
+    ["name"]=>
+    string(7) "TESTMAN"
+    ["created_at"]=>
+    string(19) "2019-12-15 18:46:18"
+    ["updated_at"]=>
+    string(19) "2019-12-15 18:46:18"
+  }
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["casts":protected]=>
+  array(0) {
+  }
+  ["dates":protected]=>
+  array(0) {
+  }
+  ["dateFormat":protected]=>
+  NULL
+  ["appends":protected]=>
+  array(0) {
+  }
+  ["dispatchesEvents":protected]=>
+  array(0) {
+  }
+  ["observables":protected]=>
+  array(0) {
+  }
+  ["relations":protected]=>
+  array(0) {
+  }
+  ["touches":protected]=>
+  array(0) {
+  }
+  ["timestamps"]=>
+  bool(true)
+  ["hidden":protected]=>
+  array(0) {
+  }
+  ["visible":protected]=>
+  array(0) {
+  }
+  ["fillable":protected]=>
+  array(0) {
+  }
+  ["guarded":protected]=>
+  array(1) {
+    [0]
+</div>
+                    </td> -->
+                    <td>
+                        <form action="/TEST1/public/tasks/18" method="POST">
+                            <input type="hidden" name="_token" value="DO9YO2JzDXr07lbgxhO1mhLjWbMLb4IEncWxEGRg">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <div>&nbsp;</div>
+                            <button>Delete Task</button>
+                        </form>
+                    </td>
+                </tr>
+                    </tbody>
+    </table>
+        </div>
+    
+</body>
