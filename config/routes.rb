@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 root 'task#index' 
 
 get 'tasks' =>  'task#index'    #タスクの一覧画面 

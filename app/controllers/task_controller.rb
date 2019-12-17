@@ -1,4 +1,5 @@
 class TaskController < ApplicationController
+    # before_action :move_to_index, except: :index
 
     def index
         @tasks = Task.all
@@ -8,7 +9,7 @@ class TaskController < ApplicationController
       @task = Task.create(task_params)
       redirect_to tasks_path
     end
-
+       
     def destroy
       task = Task.find(params[:id])
       task.destroy
@@ -18,4 +19,9 @@ class TaskController < ApplicationController
     def task_params
       params.permit(:text)
     end
+
+    # def  move_to_index
+    #   redirect_to action: :index unless user_signed_in?
+    # end
+     
 end
